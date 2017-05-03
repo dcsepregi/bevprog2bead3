@@ -1,7 +1,5 @@
 #include "graphics.hpp"
 #include "widgets.hpp"
-#include "counter.hpp"
-#include "selector.hpp"
 #include <vector>
 #include <ctime>
 #include <random>
