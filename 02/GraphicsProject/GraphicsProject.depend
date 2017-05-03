@@ -1,127 +1,171 @@
 # depslib dependency file v1.0
-1491306294 source:d:\egyetem\2.felev\bev_prog2\08\graphicsproject\main.cpp
+1493668375 source:d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\examplecheckbox.cpp
+	"examplecheckbox.hpp"
+	"graphics.hpp"
+
+1493668375 d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\examplecheckbox.hpp
 	"graphics.hpp"
 	"widgets.hpp"
-	"examplecheckbox.hpp"
-	"checkboxtext.hpp"
-	"statictext.hpp"
-	"editorbox.hpp"
-	<vector>
-	<iostream>
 
-1487068082 d:\egyetem\2.felev\bev_prog2\08\graphicsproject\include\graphics.hpp
+1487068082 d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\include\graphics.hpp
 	<string>
 
-1491306350 d:\egyetem\2.felev\bev_prog2\08\graphicsproject\widgets.hpp
+1493668375 d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\widgets.hpp
 	"graphics.hpp"
 
-1491306024 d:\egyetem\2.felev\bev_prog2\08\graphicsproject\examplecheckbox.hpp
+1493710620 source:d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
-
-1491306278 source:d:\egyetem\2.felev\bev_prog2\08\graphicsproject\widgets.cpp
-	"widgets.hpp"
-	"graphics.hpp"
-
-1491306030 source:d:\egyetem\2.felev\bev_prog2\08\graphicsproject\examplecheckbox.cpp
 	"examplecheckbox.hpp"
-	"graphics.hpp"
-
-1491302952 source:d:\egyetem\2.felev\bev_prog2\08\graphicsproject\checkboxtext.cpp
-	"checkboxtext.hpp"
-	"graphics.hpp"
-
-1491301429 d:\egyetem\2.felev\bev_prog2\08\graphicsproject\checkboxtext.hpp
-	"graphics.hpp"
-	"widgets.hpp"
-
-1491303713 d:\egyetem\2.felev\bev_prog2\08\graphicsproject\statictext.hpp
-	"graphics.hpp"
-	"widgets.hpp"
-
-1491303719 source:d:\egyetem\2.felev\bev_prog2\08\graphicsproject\statictext.cpp
 	"statictext.hpp"
-	"graphics.hpp"
+	"texteditor.hpp"
+	"window.hpp"
+	"pushbutton.hpp"
+	<vector>
 
-1491306357 source:d:\egyetem\2.felev\bev_prog2\08\graphicsproject\editorbox.cpp
-	"editorbox.hpp"
-	"graphics.hpp"
-	<iostream>
-
-1491306260 d:\egyetem\2.felev\bev_prog2\08\graphicsproject\editorbox.hpp
-	"graphics.hpp"
+1493668375 d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\statictext.hpp
+	<string>
 	"widgets.hpp"
 
-1491302952 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\checkboxtext.cpp
-	"checkboxtext.hpp"
-	"graphics.hpp"
-
-1491301429 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\checkboxtext.hpp
-	"graphics.hpp"
+1493668375 d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\texteditor.hpp
+	<string>
 	"widgets.hpp"
 
-1487068082 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\include\graphics.hpp
+1493668375 d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\window.hpp
+	"widgets.hpp"
+	<vector>
+
+1493668375 d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\pushbutton.hpp
+	"widgets.hpp"
+	"window.hpp"
+
+1493668375 source:d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\statictext.cpp
+	"statictext.hpp"
 	<string>
 
-1492699591 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\widgets.hpp
-	"graphics.hpp"
-	<vector>
+1493668375 source:d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\texteditor.cpp
+	"texteditor.hpp"
+	<string>
 
-1492685056 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\editorbox.cpp
-	"editorbox.hpp"
-	"graphics.hpp"
-	<iostream>
-
-1492684968 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\editorbox.hpp
-	"graphics.hpp"
+1493668375 source:d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\widgets.cpp
 	"widgets.hpp"
+	"graphics.hpp"
 
-1492619383 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\examplecheckbox.cpp
+1493668375 source:d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\pushbutton.cpp
+	"pushbutton.hpp"
+
+1493710482 source:d:\egyetem\2.felev\bev_prog2\09\jo\graphicsproject\window.cpp
+	"window.hpp"
+
+1493720036 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\examplecheckbox.cpp
 	"examplecheckbox.hpp"
 	"graphics.hpp"
 
-1491306024 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\examplecheckbox.hpp
+1493720032 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\examplecheckbox.hpp
 	"graphics.hpp"
 	"widgets.hpp"
 
-1492703792 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\main.cpp
+1487068082 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\include\graphics.hpp
+	<string>
+
+1493717677 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\widgets.hpp
 	"graphics.hpp"
+
+1493725258 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\pushbutton.cpp
+	"pushbutton.hpp"
+
+1493725281 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\pushbutton.hpp
 	"widgets.hpp"
-	"counter.hpp"
-	"selector.hpp"
+	"window.hpp"
+	<functional>
+
+1493668375 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\window.hpp
+	"widgets.hpp"
 	<vector>
-	<ctime>
-	<random>
 
-1491303713 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\statictext.hpp
-	"graphics.hpp"
-	"widgets.hpp"
-
-1491303719 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\statictext.cpp
+1493668375 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\statictext.cpp
 	"statictext.hpp"
-	"graphics.hpp"
+	<string>
 
-1492701182 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\widgets.cpp
+1493668375 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\statictext.hpp
+	<string>
+	"widgets.hpp"
+
+1493719889 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\texteditor.cpp
+	"texteditor.hpp"
+	<string>
+
+1493719828 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\texteditor.hpp
+	<string>
+	"widgets.hpp"
+
+1493717395 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\widgets.cpp
 	"widgets.hpp"
 	"graphics.hpp"
-	<vector>
 
-1492701214 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\counter.cpp
+1493710482 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\window.cpp
+	"window.hpp"
+
+1493719230 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\counter.cpp
 	"counter.hpp"
 	"graphics.hpp"
 	<sstream>
 
-1492675259 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\counter.hpp
+1493719235 d:\egyetem\2.felev\bev_prog2\10\graphicsproject\counter.hpp
 	"graphics.hpp"
 	"widgets.hpp"
 
-1492703914 source:d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\selector.cpp
-	"selector.hpp"
-	"graphics.hpp"
-	<vector>
-
-1492692425 d:\egyetem\2.felev\bev_prog2\bead\02\graphicsproject\selector.hpp
+1493725073 source:d:\egyetem\2.felev\bev_prog2\10\graphicsproject\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
+	"examplecheckbox.hpp"
+	"texteditor.hpp"
+	"counter.hpp"
+	"window.hpp"
+	"pushbutton.hpp"
 	<vector>
+	<iostream>
+	<sstream>
+	<cstdlib>
+
+1493720036 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\examplecheckbox.cpp
+	"examplecheckbox.hpp"
+	"graphics.hpp"
+
+1493720032 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\examplecheckbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1487068082 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\include\graphics.hpp
+	<string>
+
+1493717677 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
+	"graphics.hpp"
+
+1493725258 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.cpp
+	"pushbutton.hpp"
+
+1493725281 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.hpp
+	"widgets.hpp"
+	"window.hpp"
+	<functional>
+
+1493668375 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
+	"widgets.hpp"
+	<vector>
+
+1493719889 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.cpp
+	"texteditor.hpp"
+	<string>
+
+1493719828 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.hpp
+	<string>
+	"widgets.hpp"
+
+1493717395 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1493710482 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
+	"window.hpp"
 
