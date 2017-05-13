@@ -34,12 +34,3 @@ void PushButton::handle(genv::event ev) {
 void PushButton::action() {
     _parent->esemeny(_azonosito);
 }
-
-FunctorButton::FunctorButton(int x, int y, int sx, int sy, std::string s, std::function<void()> functor):PushButton(x,y,sx,sy,s), _functor(functor)
-{
-}
-
-void FunctorButton::action()
-{
-    _functor();
-}

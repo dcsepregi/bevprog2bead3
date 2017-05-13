@@ -40,8 +40,8 @@
 			<Add library="lib/libSDLmain.a" />
 			<Add directory="lib" />
 		</Linker>
-		<Unit filename="counter.cpp" />
-		<Unit filename="counter.hpp" />
+		<Unit filename="Board.hpp" />
+		<Unit filename="board.cpp" />
 		<Unit filename="examplecheckbox.cpp" />
 		<Unit filename="examplecheckbox.hpp" />
 		<Unit filename="include/SDL/SDL.h" />

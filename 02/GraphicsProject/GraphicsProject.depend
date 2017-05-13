@@ -139,16 +139,15 @@
 1487068082 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\include\graphics.hpp
 	<string>
 
-1493717677 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
+1493824835 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
 	"graphics.hpp"
 
-1493725258 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.cpp
+1493824800 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.cpp
 	"pushbutton.hpp"
 
-1493725281 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.hpp
+1493824094 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.hpp
 	"widgets.hpp"
 	"window.hpp"
-	<functional>
 
 1493668375 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
 	"widgets.hpp"
@@ -162,10 +161,19 @@
 	<string>
 	"widgets.hpp"
 
-1493717395 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.cpp
+1493824817 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.cpp
 	"widgets.hpp"
 	"graphics.hpp"
 
 1493710482 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
 	"window.hpp"
+
+1493824783 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"texteditor.hpp"
+	"window.hpp"
+	"pushbutton.hpp"
+	<vector>
+	<iostream>
 

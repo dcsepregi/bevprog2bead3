@@ -1,13 +1,10 @@
 #include "graphics.hpp"
 #include "widgets.hpp"
-#include "examplecheckbox.hpp"
 #include "texteditor.hpp"
 #include "window.hpp"
 #include "pushbutton.hpp"
 #include <vector>
 #include <iostream>
-#include <sstream>
-#include <cstdlib>
 
 using namespace std;
 using namespace genv;
@@ -16,8 +13,13 @@ class ValamiButton;
 
 class MyWindow : public Window {
 public:
+    vector<Widget> *vw;
+    Board *Board;
     ValamiButton *vButton;
-    MyWindow();
+    MyWindow()
+    {
+        board = new Board(vw);
+    };
 
     void valami(){
         }

@@ -6,7 +6,7 @@
 class Widget {
 protected:
     bool _focused;
-    int _x, _y, _size_x, _size_y, _min, _max;
+    int _x, _y, _size_x, _size_y;
 public:
     int _num;
     Widget(int x, int y, int sx, int sy);
