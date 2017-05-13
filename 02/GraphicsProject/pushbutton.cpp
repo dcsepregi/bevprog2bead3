@@ -19,8 +19,7 @@ PushButton::PushButton(int x, int y, int sx, int sy, string s)
 }
 
 void PushButton::draw() const {
-    if (_focused) gout << color(80,80,80);
-        else gout << color(30,30,30);
+    gout << color(80,80,80);
     gout << move_to(_x, _y) << box(_size_x, _size_y)
          << color(255,255,255);
     gout << move_to(_x+_size_x/2-gout.twidth(_felirat)/2, _y+20)

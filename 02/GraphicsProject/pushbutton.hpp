@@ -13,7 +13,7 @@ public:
                 int sy, std::string s, std::string azonosito);
     PushButton(int x, int y, int sx,
                 int sy, std::string s);
-    virtual void draw() const ;
+    virtual void draw() const;
     virtual void handle(genv::event ev);
     virtual void action();
 };

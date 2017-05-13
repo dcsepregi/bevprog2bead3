@@ -1,6 +1,7 @@
 #include "graphics.hpp"
 #include "widgets.hpp"
 #include "texteditor.hpp"
+#include "statictext.hpp"
 #include "window.hpp"
 #include "pushbutton.hpp"
 #include "Board.hpp"
