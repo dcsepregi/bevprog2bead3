@@ -40,10 +40,8 @@
 			<Add library="lib/libSDLmain.a" />
 			<Add directory="lib" />
 		</Linker>
-		<Unit filename="Board.hpp" />
-		<Unit filename="board.cpp" />
-		<Unit filename="examplecheckbox.cpp" />
-		<Unit filename="examplecheckbox.hpp" />
+		<Unit filename="counter.cpp" />
+		<Unit filename="counter.hpp" />
 		<Unit filename="include/SDL/SDL.h" />
 		<Unit filename="include/SDL/SDL_active.h" />
 		<Unit filename="include/SDL/SDL_audio.h" />
@@ -80,16 +78,10 @@
 		<Unit filename="include/SDL/close_code.h" />
 		<Unit filename="include/graphics.hpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="pushbutton.cpp" />
-		<Unit filename="pushbutton.hpp" />
-		<Unit filename="statictext.cpp" />
-		<Unit filename="statictext.hpp" />
-		<Unit filename="texteditor.cpp" />
-		<Unit filename="texteditor.hpp" />
+		<Unit filename="selector.cpp" />
+		<Unit filename="selector.hpp" />
 		<Unit filename="widgets.cpp" />
 		<Unit filename="widgets.hpp" />
-		<Unit filename="window.cpp" />
-		<Unit filename="window.hpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

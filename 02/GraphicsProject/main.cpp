@@ -3,6 +3,7 @@
 #include "texteditor.hpp"
 #include "window.hpp"
 #include "pushbutton.hpp"
+#include "Board.hpp"
 #include <vector>
 #include <iostream>
 
@@ -14,12 +15,9 @@ class ValamiButton;
 class MyWindow : public Window {
 public:
     vector<Widget> *vw;
-    Board *Board;
+    Board *board;
     ValamiButton *vButton;
-    MyWindow()
-    {
-        board = new Board(vw);
-    };
+    MyWindow();
 
     void valami(){
         }
@@ -35,6 +33,7 @@ public:
 };
 
 MyWindow::MyWindow() {
+        board = new Board(vw);
         vButton = new ValamiButton(this, 10, 200, 100, 40, "vbut", "");
         widgets.push_back(vButton);
 }

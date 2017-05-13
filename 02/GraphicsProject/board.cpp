@@ -7,7 +7,7 @@
 using namespace genv;
 using namespace std;
 
-Board::Board(vector<Widget>& vw){
+Board::Board(vector<Widget>*& vw){
     char c;
     int db;
     ifstream fs("sudoku.txt");
@@ -20,8 +20,8 @@ Board::Board(vector<Widget>& vw){
                     StaticText st(10+j*30,10+i*30,20,20,c);
                     TextEditor tx(10+j*30,10+i*30,20,20,c);
                     if(c==' ')
-                        vw.push_back(tx);
+                        vw->push_back(tx);
                     else
-                        vw.push_back(st);
+                        vw->push_back(st);
                 }
 }
