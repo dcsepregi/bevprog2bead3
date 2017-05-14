@@ -14,7 +14,7 @@ void TextEditor::draw() const {
     }
     gout << move_to(_x, _y) << box(_size_x, _size_y);
     gout << color(0,0,0) << move_to(_x+1, _y+1) << box(_size_x-2, _size_y-2);
-    gout << move_to(_x+4,_y+2*_size_y/3) << color(_r,_g,_b);
+    gout << move_to(_x+10,_y+2*_size_y/3) << color(_r,_g,_b);
    /* if (!_focused && _s=="")
         gout << text("hostname");
     else*/ gout << text(_c);
@@ -36,7 +36,7 @@ void TextEditor::handle(event ev) {
     if(_tick>40)
         _tick=0;
     if (ev.type == ev_key) {
-        if (ev.keycode >= '0' && ev.keycode <= '9') {
+        if (ev.keycode >= '1' && ev.keycode <= '9') {
             _c = ev.keycode;
             }
         if (ev.keycode==key_backspace)

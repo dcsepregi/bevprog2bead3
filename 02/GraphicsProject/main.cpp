@@ -6,9 +6,6 @@
 #include "pushbutton.hpp"
 #include "Board.hpp"
 #include <vector>
-#include <iostream>
-#include <random>
-#include <ctime>
 
 using namespace std;
 using namespace genv;
@@ -23,8 +20,6 @@ public:
     MyWindow();
 
     void valami(){
-        elem=rand() % board->retdb();
-        cout << elem;
         board = new Board(vw);
     }
 };
@@ -39,9 +34,8 @@ public:
 };
 
 MyWindow::MyWindow() {
-    srand(time(NULL));
     board = new Board(vw);
-    vButton = new ValamiButton(this, 10, 300, 100, 40, "new game", "new");
+    vButton = new ValamiButton(this, 10, 350, 100, 40, "new game", "new");
     vw.push_back(vButton);
 }
 

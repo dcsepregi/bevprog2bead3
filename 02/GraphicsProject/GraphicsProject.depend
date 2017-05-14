@@ -134,13 +134,13 @@
 	"graphics.hpp"
 	"widgets.hpp"
 
-1494701794 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\include\graphics.hpp
+1494759738 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\include\graphics.hpp
 	<string>
 
-1494775310 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
+1494794392 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
 	"graphics.hpp"
 
-1494792045 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
+1494793630 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"texteditor.hpp"
@@ -149,9 +149,6 @@
 	"pushbutton.hpp"
 	"Board.hpp"
 	<vector>
-	<iostream>
-	<random>
-	<ctime>
 
 1494701791 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\selector.hpp
 	"graphics.hpp"
@@ -163,7 +160,7 @@
 	"graphics.hpp"
 	<vector>
 
-1494775490 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.cpp
+1494759738 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.cpp
 	"widgets.hpp"
 	"graphics.hpp"
 
@@ -175,47 +172,48 @@
 	"graphics.hpp"
 	"widgets.hpp"
 
-1494702894 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.cpp
+1494759738 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.cpp
 	"pushbutton.hpp"
 
-1494705397 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.hpp
+1494759738 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\pushbutton.hpp
 	"widgets.hpp"
 	"window.hpp"
 
-1494776044 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
+1494759738 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
 	"widgets.hpp"
 	<vector>
 
-1494775288 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.cpp
+1494793294 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.cpp
 	"statictext.hpp"
 	<string>
 
-1494775358 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.hpp
+1494794294 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.hpp
 	<string>
 	"widgets.hpp"
 
-1494791697 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
+1494794594 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
 	"Board.hpp"
 	<vector>
 	"texteditor.hpp"
 	"statictext.hpp"
 	<fstream>
+	<random>
 
-1494775730 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.hpp
+1494759738 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.hpp
 	<vector>
 	"texteditor.hpp"
 	"statictext.hpp"
 	<fstream>
 
-1494775324 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.hpp
+1494794303 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.hpp
 	<string>
 	"widgets.hpp"
 
-1494779976 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.cpp
+1494793292 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.cpp
 	"texteditor.hpp"
 	<string>
 
-1494791991 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
+1494793919 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
 	"window.hpp"
 	<iostream>
 

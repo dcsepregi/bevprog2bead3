@@ -14,6 +14,7 @@ public:
     virtual bool focusable() const {return false;}
     inline char value() {return _c;}
     //void setText(std::string s) {_s=s;}
+    void setchar(char c) {_c=c;}
 };
 
 

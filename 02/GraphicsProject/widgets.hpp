@@ -24,6 +24,7 @@ public:
     virtual void _inctick();
     inline char value() {return _c;}
     virtual void setrgb(int r, int g, int b);
+    void setchar(char c) {_c=c;}
 };
 
 

@@ -10,7 +10,6 @@ void Window::event_loop() {
     int szdb1=0;
     int szdb2=0;
     int szdb3=0;
-    int ez=1;
     while(gin >> ev && ev.keycode!=key_escape) {
         if (ev.type == ev_key && ev.keycode == key_tab) {
             if(focus!=-1) {
@@ -33,6 +32,8 @@ void Window::event_loop() {
         }
 
         if (focus!=-1) {
+        if (focus!=vw.size()-1)
+        {
 
         szdb1=0;
 
@@ -42,7 +43,7 @@ void Window::event_loop() {
             for (int j=-3; j<3; j++)
             {
                 db++;
-                if((i+j*9)%18==focus%18 && i+j*9>0)
+                if((i+j*9)%18==focus%18 && i+j*9>0 && i+j*9<81)
                     if(vw[i+j*9]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
                         szdb1++;
             }
@@ -59,9 +60,9 @@ void Window::event_loop() {
         for (int i=(focus/9)*9; i<((focus/9)*9)+9; i++) ///sor ellenorzes
             if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
                 szdb3++;
-        /*if(szdb1>1)
+        if(szdb1>1)
                 vw[focus]->setrgb(255,0,0);
-            else*/
+            else
                 if(szdb2>1)
                     vw[focus]->setrgb(255,0,0);
                 else
@@ -71,6 +72,7 @@ void Window::event_loop() {
                 vw[focus]->setrgb(255,255,255);
 
             vw[focus]->_inctick();
+        }
             vw[focus]->handle(ev);
         }
 
