@@ -42,10 +42,6 @@
 		</Linker>
 		<Unit filename="Board.hpp" />
 		<Unit filename="board.cpp" />
-		<Unit filename="counter.cpp" />
-		<Unit filename="counter.hpp" />
-		<Unit filename="examplecheckbox.cpp" />
-		<Unit filename="examplecheckbox.hpp" />
 		<Unit filename="include/SDL/SDL.h" />
 		<Unit filename="include/SDL/SDL_active.h" />
 		<Unit filename="include/SDL/SDL_audio.h" />

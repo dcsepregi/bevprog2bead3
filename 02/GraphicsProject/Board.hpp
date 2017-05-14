@@ -7,8 +7,11 @@
 #include <fstream>
 
 class Board{
+protected:
+    int _db;
 public:
         Board(std::vector<Widget*>& vw);
+        int retdb() {return _db;}
 };
 
 

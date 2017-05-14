@@ -7,6 +7,8 @@ class Widget {
 protected:
     bool _focused;
     int _x, _y, _size_x, _size_y, _min, _max;
+    char _c;
+    int _r,_g,_b;
 public:
     int _num;
     Widget(int x, int y, int sx, int sy);
@@ -19,6 +21,9 @@ public:
     virtual bool focusable() const;
     virtual void focus();
     virtual void unfocus();
+    virtual void _inctick();
+    inline char value() {return _c;}
+    virtual void setrgb(int r, int g, int b);
 };
 
 

@@ -1,9 +1,16 @@
 #include "window.hpp"
+#include <iostream>
+
 using namespace genv;
 
 void Window::event_loop() {
+    gin.timer(40);
     event ev;
     int focus = -1;
+    int szdb1=0;
+    int szdb2=0;
+    int szdb3=0;
+    int ez=1;
     while(gin >> ev && ev.keycode!=key_escape) {
         if (ev.type == ev_key && ev.keycode == key_tab) {
             if(focus!=-1) {
@@ -24,12 +31,37 @@ void Window::event_loop() {
                 }
             }
         }
+
         if (focus!=-1) {
+
+        szdb1=0;
+
+        for (int i=focus/3; i<(focus/3)+3; i++)
+                if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
+                    szdb1++;
+        szdb2=0;
+
+        for (int i=focus%9; i<=81; i+=9)
+            if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
+                szdb2++;
+        szdb3=0;
+
+        for (int i=focus/9; i<(focus/9)+9; i++)
+            if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
+                szdb3++;
+        if(szdb1>1 || szdb2>1 || szdb3>1)
+                vw[focus]->setrgb(255,0,0);
+            else
+                vw[focus]->setrgb(255,255,255);
+
+            vw[focus]->_inctick();
             vw[focus]->handle(ev);
         }
+
         for (size_t i=0;i<vw.size();i++) {
             vw[i]->draw();
         }
+
         gout << refresh;
     }
 }

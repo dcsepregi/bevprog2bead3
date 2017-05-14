@@ -6,12 +6,13 @@
 class StaticText : public Widget {
 protected:
     std::string _s;
-    char _c;
 public:
     //StaticText(int x, int y, int sx, int sy, std::string s);
     StaticText(int x, int y, int sx, int sy, char c);
+    virtual void setrgb(int r, int g, int b);
     virtual void draw() const ;
     virtual bool focusable() const {return false;}
+    inline char value() {return _c;}
     //void setText(std::string s) {_s=s;}
 };
 

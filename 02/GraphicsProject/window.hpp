@@ -7,6 +7,7 @@
 
 class Window {
 protected:
+    int elem;
     std::vector<Widget*> vw;
 public:
     virtual void esemeny(std::string mitortent){}

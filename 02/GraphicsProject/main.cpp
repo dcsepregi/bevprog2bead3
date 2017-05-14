@@ -7,6 +7,8 @@
 #include "Board.hpp"
 #include <vector>
 #include <iostream>
+#include <random>
+#include <ctime>
 
 using namespace std;
 using namespace genv;
@@ -17,10 +19,14 @@ class MyWindow : public Window {
 public:
     //Board *board;
     ValamiButton *vButton;
+    Board *board;
     MyWindow();
 
     void valami(){
-        }
+        elem=rand() % board->retdb();
+        cout << elem;
+        board = new Board(vw);
+    }
 };
 
 class ValamiButton : public PushButton {
@@ -33,10 +39,10 @@ public:
 };
 
 MyWindow::MyWindow() {
-//        board = new Board(vw);
-        Board board(vw);
-       // vButton = new ValamiButton(this, 10, 200, 100, 40, "vbut", "");
-       // widgets.push_back(vButton);
+    srand(time(NULL));
+    board = new Board(vw);
+    vButton = new ValamiButton(this, 10, 300, 100, 40, "new game", "new");
+    vw.push_back(vButton);
 }
 
 void ValamiButton::action()

@@ -9,12 +9,11 @@ using namespace std;
 
 Board::Board(vector<Widget*>& vw){
     char c;
-    int db;
     StaticText *st;
     TextEditor *tx;
     ifstream fs("sudoku.txt");
-    fs >> db;
-    for(int k=0;k<db; k++)
+    fs >> _db;
+    for(int k=0;k<_db; k++)
         for(int i=0; i<9; i++)
             for(int j=0; j<9; j++)
                 {

@@ -5,8 +5,8 @@
 
 class TextEditor : public Widget{
     std::string _s;
-    char _c;
-    int _r, _g, _b;
+    bool _ticknum;
+    int _tick;
 public:
     //TextEditor(int x, int y, int sx, int sy, std::string s);
     TextEditor(int x, int y, int sx, int sy, char c);
@@ -14,7 +14,8 @@ public:
     virtual void draw() const;
     virtual void handle(genv::event ev);
     virtual void setrgb(int r, int g, int b);
-    inline std::string value() {return _s;}
+    virtual void _inctick();
+    inline char value() {return _c;}
 };
 
 
