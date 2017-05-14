@@ -28,7 +28,7 @@ void Window::event_loop() {
             vw[focus]->handle(ev);
         }
         for (size_t i=0;i<vw.size();i++) {
-//            vw[i]->draw();
+            vw[i]->draw();
         }
         gout << refresh;
     }

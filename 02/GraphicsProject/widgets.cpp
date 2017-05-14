@@ -37,7 +37,6 @@ bool Widget::is_selected(int mouse_x, int mouse_y) const
     return mouse_x>_x && mouse_x<_x+_size_x && mouse_y>_y && mouse_y<_y+_size_y;
 }
 
-
 void Widget::handle(event ev) {
 }
 
@@ -50,3 +49,5 @@ void Widget::focus() {
 void Widget::unfocus() {
     _focused = false;
 }
+
+void Widget::draw() const {}

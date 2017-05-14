@@ -137,10 +137,10 @@
 1494701794 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\include\graphics.hpp
 	<string>
 
-1494705465 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
+1494754851 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
 	"graphics.hpp"
 
-1494754386 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
+1494755046 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"texteditor.hpp"
@@ -161,7 +161,7 @@
 	"graphics.hpp"
 	<vector>
 
-1494705263 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.cpp
+1494754978 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.cpp
 	"widgets.hpp"
 	"graphics.hpp"
 
@@ -180,19 +180,19 @@
 	"widgets.hpp"
 	"window.hpp"
 
-1494754499 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
+1494754883 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
 	"widgets.hpp"
 	<vector>
 
-1494696586 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.cpp
+1494756753 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.cpp
 	"statictext.hpp"
 	<string>
 
-1494696656 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.hpp
+1494754860 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\statictext.hpp
 	<string>
 	"widgets.hpp"
 
-1494754518 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
+1494756882 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
 	"Board.hpp"
 	<vector>
 	"texteditor.hpp"
@@ -205,14 +205,14 @@
 	"statictext.hpp"
 	<fstream>
 
-1494705406 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.hpp
+1494755295 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.hpp
 	<string>
 	"widgets.hpp"
 
-1494703059 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.cpp
+1494754853 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\texteditor.cpp
 	"texteditor.hpp"
 	<string>
 
-1494705437 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
+1494754750 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
 	"window.hpp"
 

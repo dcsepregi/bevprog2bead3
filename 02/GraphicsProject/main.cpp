@@ -15,8 +15,7 @@ class ValamiButton;
 
 class MyWindow : public Window {
 public:
-    //vector<Widget> *vw;
-    Board *board;
+    //Board *board;
     ValamiButton *vButton;
     MyWindow();
 
@@ -34,7 +33,8 @@ public:
 };
 
 MyWindow::MyWindow() {
-        board = new Board(vw);
+//        board = new Board(vw);
+        Board board(vw);
        // vButton = new ValamiButton(this, 10, 200, 100, 40, "vbut", "");
        // widgets.push_back(vButton);
 }

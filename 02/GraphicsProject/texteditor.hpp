@@ -8,7 +8,7 @@ class TextEditor : public Widget{
     char _c;
     int _r, _g, _b;
 public:
-    TextEditor(int x, int y, int sx, int sy, std::string s);
+    //TextEditor(int x, int y, int sx, int sy, std::string s);
     TextEditor(int x, int y, int sx, int sy, char c);
     virtual bool focusable() const {return true;}
     virtual void draw() const;

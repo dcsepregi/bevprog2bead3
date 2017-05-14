@@ -20,8 +20,8 @@ Board::Board(vector<Widget*>& vw){
                 {
                     fs >> c;
                     st = new StaticText(10+j*30,10+i*30,20,20,c);
-                    tx = new TextEditor(10+j*30,10+i*30,20,20,c);
-                    if(c==' ')
+                    tx = new TextEditor(10+j*30,10+i*30,20,20,' ');
+                    if(c=='_')
                         vw.push_back(tx);
                     else
                         vw.push_back(st);

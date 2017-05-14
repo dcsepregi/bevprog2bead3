@@ -14,11 +14,11 @@ void TextEditor::draw() const {
     }
     gout << move_to(_x, _y) << box(_size_x, _size_y);
     gout << color(_r,_g,_b) << move_to(_x+1, _y+1) << box(_size_x-2, _size_y-2);
-    gout << move_to(_x+3,_y+gout.cascent()+5) << color(255,255,255);
+    gout << move_to(_x+4,_y+2*_size_y/3) << color(255,255,255);
    /* if (!_focused && _s=="")
         gout << text("hostname");
     else*/ gout << text(_c);
-    //if (_focused) gout <<text("|");
+    if (_focused) gout <<text("|");
 }
 
 void TextEditor::setrgb(int r, int g, int b)
@@ -31,7 +31,7 @@ void TextEditor::setrgb(int r, int g, int b)
 void TextEditor::handle(event ev) {
     if (ev.type == ev_key) {
         if (ev.keycode >= ' ' && ev.keycode < 255) {
-            _c += ev.keycode;
+            _c = ev.keycode;
             }
     }
 }

@@ -12,7 +12,7 @@ public:
     Widget(int x, int y, int sx, int sy);
     Widget(int x, int y, int sx, int sy, int num, int mi, int ma); ///counter widget
     virtual bool is_selected(int mouse_x, int mouse_y) const;
-    //virtual void draw() const;
+    virtual void draw() const;
     virtual void handle(genv::event ev);
     virtual bool _increase(int mouse_x, int mouse_y) const; ///mouse click on increase sign
     virtual bool _decrease(int mouse_x, int mouse_y) const; ///mouse click on decrease sign
