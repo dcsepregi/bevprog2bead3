@@ -179,7 +179,7 @@
 	"widgets.hpp"
 	"window.hpp"
 
-1494759738 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
+1494795455 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
 	"widgets.hpp"
 	<vector>
 
@@ -213,7 +213,7 @@
 	"texteditor.hpp"
 	<string>
 
-1494793919 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
+1494797718 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
 	"window.hpp"
 	<iostream>
 

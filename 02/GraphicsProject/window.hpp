@@ -9,9 +9,12 @@ class Window {
 protected:
     int elem;
     std::vector<Widget*> vw;
+    int szdb1=0;
+    int szdb2=0;
+    int szdb3=0;
 public:
     virtual void esemeny(std::string mitortent){}
-
+    void ellenor(int mezo);
     void event_loop() ;
 };
 

@@ -3,13 +3,49 @@
 
 using namespace genv;
 
+void Window::ellenor(int mezo){
+        szdb1=0;
+
+        for (int i=(mezo/3)*3; i<((mezo/3)*3)+3; i++) ///3x3 mezo ellenorzes
+        {
+            for (int j=-2; j<3; j++)
+            {
+                if((i+j*9)/27==mezo/27 && (i+j*9)>0 && (i+j*9)<81)
+                    if(vw[i+j*9]->value()==vw[mezo]->value() && vw[mezo]->value()!=' ')
+                        szdb1++;
+            }
+        }
+
+        szdb2=0;
+
+        for (int i=mezo%9; i<81; i+=9) ///oszlop ellenorzes
+            if(vw[i]->value()==vw[mezo]->value() && vw[mezo]->value()!=' ')
+                szdb2++;
+
+        szdb3=0;
+
+        for (int i=(mezo/9)*9; i<((mezo/9)*9)+9; i++) ///sor ellenorzes
+            if(vw[i]->value()==vw[mezo]->value() && vw[mezo]->value()!=' ')
+                szdb3++;
+
+        if(szdb1>1)
+                vw[mezo]->setrgb(255,0,0);
+            else
+                if(szdb2>1)
+                    vw[mezo]->setrgb(255,0,0);
+                else
+                    if(szdb3>1)
+                        vw[mezo]->setrgb(255,0,0);
+                    else
+                vw[mezo]->setrgb(255,255,255);
+}
+
 void Window::event_loop() {
+    bool win;
+    bool tele;
     gin.timer(40);
     event ev;
     int focus = -1;
-    int szdb1=0;
-    int szdb2=0;
-    int szdb3=0;
     while(gin >> ev && ev.keycode!=key_escape) {
         if (ev.type == ev_key && ev.keycode == key_tab) {
             if(focus!=-1) {
@@ -31,54 +67,46 @@ void Window::event_loop() {
             }
         }
 
+        for (size_t i=0;i<vw.size();i++) {
+            vw[i]->draw();
+        }
+
         if (focus!=-1) {
         if (focus!=vw.size()-1)
         {
 
-        szdb1=0;
+        ellenor(focus);
 
-        for (int i=(focus/3)*3; i<((focus/3)*3)+3; i++) ///3x3 mezo ellenorzes
-        {
-            int db=0;
-            for (int j=-3; j<3; j++)
-            {
-                db++;
-                if((i+j*9)%18==focus%18 && i+j*9>0 && i+j*9<81)
-                    if(vw[i+j*9]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
-                        szdb1++;
-            }
-        }
+        vw[focus]->_inctick();
 
-        szdb2=0;
-
-        for (int i=focus%9; i<81; i+=9) ///oszlop ellenorzes
-            if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
-                szdb2++;
-
-        szdb3=0;
-
-        for (int i=(focus/9)*9; i<((focus/9)*9)+9; i++) ///sor ellenorzes
-            if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
-                szdb3++;
-        if(szdb1>1)
-                vw[focus]->setrgb(255,0,0);
-            else
-                if(szdb2>1)
-                    vw[focus]->setrgb(255,0,0);
-                else
-                    if(szdb3>1)
-                        vw[focus]->setrgb(255,0,0);
-                    else
-                vw[focus]->setrgb(255,255,255);
-
-            vw[focus]->_inctick();
         }
             vw[focus]->handle(ev);
         }
 
-        for (size_t i=0;i<vw.size();i++) {
-            vw[i]->draw();
+        tele=true;
+        int i=0;
+
+        while(i<vw.size()-1 && tele)
+        {
+            if(vw[i]->value()==' ')
+                tele=false;
+            i++;
         }
+
+        if (tele)
+        {
+            win=true;
+            for(int i=0; i<vw.size()-1; i++)
+            ellenor(i);
+                if(szdb1>1 || szdb2>1 || szdb3>1)
+                    win=false;
+        }
+
+        if(win)
+        {
+            gout << move_to(300,350) << color(255,255,255) << text("You won!");
+        }
+
 
         gout << refresh;
     }
