@@ -8,6 +8,10 @@ using namespace genv;
 using namespace std;
 
 Board::Board(vector<Widget*>& vw){
+    while(vw.size()>0)
+    {
+        vw.pop_back();
+    }
     char c;
     StaticText *st;
     TextEditor *tx;

@@ -36,22 +36,38 @@ void Window::event_loop() {
 
         szdb1=0;
 
-        for (int i=focus/3; i<(focus/3)+3; i++)
-                if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
-                    szdb1++;
+        for (int i=(focus/3)*3; i<((focus/3)*3)+3; i++) ///3x3 mezo ellenorzes
+        {
+            int db=0;
+            for (int j=-3; j<3; j++)
+            {
+                db++;
+                if((i+j*9)%18==focus%18 && i+j*9>0)
+                    if(vw[i+j*9]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
+                        szdb1++;
+            }
+        }
+
         szdb2=0;
 
-        for (int i=focus%9; i<=81; i+=9)
+        for (int i=focus%9; i<81; i+=9) ///oszlop ellenorzes
             if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
                 szdb2++;
+
         szdb3=0;
 
-        for (int i=focus/9; i<(focus/9)+9; i++)
+        for (int i=(focus/9)*9; i<((focus/9)*9)+9; i++) ///sor ellenorzes
             if(vw[i]->value()==vw[focus]->value() && vw[focus]->value()!=' ')
                 szdb3++;
-        if(szdb1>1 || szdb2>1 || szdb3>1)
+        /*if(szdb1>1)
                 vw[focus]->setrgb(255,0,0);
-            else
+            else*/
+                if(szdb2>1)
+                    vw[focus]->setrgb(255,0,0);
+                else
+                    if(szdb3>1)
+                        vw[focus]->setrgb(255,0,0);
+                    else
                 vw[focus]->setrgb(255,255,255);
 
             vw[focus]->_inctick();
