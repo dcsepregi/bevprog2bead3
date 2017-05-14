@@ -140,7 +140,7 @@
 1494705465 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
 	"graphics.hpp"
 
-1494705068 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
+1494754386 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"texteditor.hpp"
@@ -180,7 +180,7 @@
 	"widgets.hpp"
 	"window.hpp"
 
-1493668375 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
+1494754499 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
 	"widgets.hpp"
 	<vector>
 
@@ -192,14 +192,14 @@
 	<string>
 	"widgets.hpp"
 
-1494702276 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
+1494754518 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
 	"Board.hpp"
 	<vector>
 	"texteditor.hpp"
 	"statictext.hpp"
 	<fstream>
 
-1494702254 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.hpp
+1494754510 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.hpp
 	<vector>
 	"texteditor.hpp"
 	"statictext.hpp"

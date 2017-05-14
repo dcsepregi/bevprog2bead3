@@ -8,7 +8,7 @@
 
 class Board{
 public:
-        Board(std::vector<Widget>*& vw);
+        Board(std::vector<Widget*>& vw);
 };
 
 

@@ -7,28 +7,28 @@ void Window::event_loop() {
     while(gin >> ev && ev.keycode!=key_escape) {
         if (ev.type == ev_key && ev.keycode == key_tab) {
             if(focus!=-1) {
-                widgets[focus]->unfocus();
+                vw[focus]->unfocus();
             }
             do {
                 focus++;
-                if (focus>=widgets.size()) focus =0;
-            } while (!widgets[focus]->focusable()); //TODO:vegtelenciklus!
-            widgets[focus]->focus();
+                if (focus>=vw.size()) focus =0;
+            } while (!vw[focus]->focusable()); //TODO:vegtelenciklus!
+            vw[focus]->focus();
         }
         if (ev.type == ev_mouse && ev.button==btn_left) {
-            for (size_t i=0;i<widgets.size();i++) {
-                if (widgets[i]->is_selected(ev.pos_x, ev.pos_y) && widgets[i]->focusable()) {
-                        if (focus!=-1) widgets[focus]->unfocus();
+            for (size_t i=0;i<vw.size();i++) {
+                if (vw[i]->is_selected(ev.pos_x, ev.pos_y) && vw[i]->focusable()) {
+                        if (focus!=-1) vw[focus]->unfocus();
                         focus = i;
-                        widgets[focus]->focus();
+                        vw[focus]->focus();
                 }
             }
         }
         if (focus!=-1) {
-            widgets[focus]->handle(ev);
+            vw[focus]->handle(ev);
         }
-        for (size_t i=0;i<widgets.size();i++) {
-//            widgets[i]->draw();
+        for (size_t i=0;i<vw.size();i++) {
+//            vw[i]->draw();
         }
         gout << refresh;
     }
