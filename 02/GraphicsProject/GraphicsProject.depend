@@ -140,7 +140,7 @@
 1494794392 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\widgets.hpp
 	"graphics.hpp"
 
-1494793630 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
+1494833933 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\main.cpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"texteditor.hpp"
@@ -179,7 +179,7 @@
 	"widgets.hpp"
 	"window.hpp"
 
-1494795455 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
+1494833099 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.hpp
 	"widgets.hpp"
 	<vector>
 
@@ -191,15 +191,16 @@
 	<string>
 	"widgets.hpp"
 
-1494794594 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
+1494833848 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.cpp
 	"Board.hpp"
 	<vector>
 	"texteditor.hpp"
 	"statictext.hpp"
 	<fstream>
+	<ctime>
 	<random>
 
-1494759738 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.hpp
+1494833265 c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\board.hpp
 	<vector>
 	"texteditor.hpp"
 	"statictext.hpp"
@@ -213,7 +214,7 @@
 	"texteditor.hpp"
 	<string>
 
-1494797718 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
+1494798228 source:c:\users\dcsep\source\repos\bevprog2bead3\02\graphicsproject\window.cpp
 	"window.hpp"
 	<iostream>
 

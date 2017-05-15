@@ -17,10 +17,11 @@ public:
     //Board *board;
     ValamiButton *vButton;
     Board *board;
+    Board *board2;
     MyWindow();
 
     void valami(){
-        board = new Board(vw);
+        board2 = new Board(vw,vw2);
     }
 };
 

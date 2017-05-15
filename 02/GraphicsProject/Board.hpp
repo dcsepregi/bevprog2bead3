@@ -11,6 +11,7 @@ protected:
     int _db;
 public:
         Board(std::vector<Widget*>& vw);
+        Board(std::vector<Widget*>& vw,std::vector<Widget*> vw2);
         int retdb() {return _db;}
 };
 
